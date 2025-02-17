@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Currículo - Anderson Silva</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js"></script>
+</head>
+<body>
+    <div class="container" id="curriculo">
+        <h1>Anderson Arthur Lima Ferreira da Silva</h1>
+        <p>📍 Caruaru, PE | 📧 andersonarthur744@gmail.com | 📞 81986351157 | 🔗 
+            <a href="https://github.com/ArthurSilva007">GitHub</a>
+        </p>
+
+        <h2>Objetivo</h2>
+        <p>Busco uma oportunidade de estágio em programação para aplicar e expandir meus conhecimentos em desenvolvimento web e Python, contribuindo com soluções criativas e aprendendo com desafios reais.</p>
+
+        <h2>Formação Acadêmica</h2>
+        <p><strong>UnifavipWyden</strong><br>
+        Curso: Análise e Desenvolvimento de Sistemas<br>
+        Período: 3º semestre <br></p>
+
+        <h2>Habilidades Técnicas</h2>
+        <ul>
+            <li><strong>Linguagens de Programação:</strong> HTML, CSS, Python</li>
+            <li><strong>Frameworks e Bibliotecas:</strong> Tkinter, Jupyter, Django</li>
+            <li><strong>Ferramentas:</strong> Git/GitHub, VS Code</li>
+            <li><strong>Banco de Dados:</strong> SQLite</li>
+        </ul>
+
+        <h2>Projetos Acadêmicos e Pessoais</h2>
+        <ul>
+            <li><strong>InfraAknov 1</strong> – Um site baseado em uma empresa fictícia tecnológica, feito com Python, Django, Bootstrap & SQLite.
+                <a href="https://github.com/ArthurSilva007/Site_python_Django">Clique Aqui</a>
+            </li>
+            <li><strong>Análise Gráfica 2</strong> – Análise gráfica baseada em gastos no cartão de crédito, utilizando Python no Jupyter.
+                <a href="https://github.com/ArthurSilva007/Projeto_2.0_analisegrafico">Clique Aqui</a>
+            </li>
+            <li><strong>Portfólio 2</strong> – Um portfólio responsivo feito em HTML, CSS e JavaScript.
+                <a href="https://andersondev.site/">Clique Aqui</a>
+            </li>
+        </ul>
+
+        <h2>Cursos e Certificações</h2>
+        <ul>
+            <li>Python 3 do Básico ao Avançado – Udemy</li>
+            <li>Desenvolvimento Web do Básico ao Avançado – Udemy</li>
+            <li>HTML 5 e CSS – Udemy</li>
+        </ul>
+
+        <h2>Soft Skills</h2>
+        <ul>
+            <li>✔ Rápida aprendizagem</li>
+            <li>✔ Trabalho em equipe</li>
+            <li>✔ Resolução de problemas</li>
+            <li>✔ Proatividade</li>
+        </ul>
+    </div>
+
+    <!-- Botão Fora da Div do Currículo -->
+    <button onclick="gerarPDF()">Baixar Currículo</button>
+
+    <script>
+        function gerarPDF() {
+            const elemento = document.getElementById('curriculo');
+            html2pdf().from(elemento).save('curriculo.pdf');
+        }
+    </script>
+</body>
+</html>
